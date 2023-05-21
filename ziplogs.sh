@@ -5,7 +5,7 @@ find -type f -ctime +7 -name "*.log" > logs_to_zip
 declare -a log_array
 log_array=( $(cat logs_to_zip | tr "\n" " ") )
 
-for filr in ${log_array[@]}
+for file in ${log_array[@]}
 do
 	zip $file.zip $file
 	if [ -e $file.zip ]
