@@ -1,6 +1,6 @@
 #!/bin/bash
 
-find -type f -ctime +7 -name "*.log" > logs_to_zip
+find -type f -mtime +7 -name "*.log" > logs_to_zip
 
 declare -a log_array
 log_array=( $(cat logs_to_zip | tr "\n" " ") )
