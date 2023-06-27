@@ -9,5 +9,4 @@ sudo sh -c 'echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.m
 
 /usr/bin/echo "Installing Visual Studio Code from the official depository"
 
-dnf check-update
 sudo dnf install code -y
